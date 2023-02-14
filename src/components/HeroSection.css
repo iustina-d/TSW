@@ -1,0 +1,10 @@
+.hero-container {
+  background: linear-gradient(
+    to right,
+    rgb(138, 35, 135),
+    rgb(233, 64, 87),
+    rgb(242, 133, 33)
+  );
+  height: 90vh;
+  width: 100%;
+}
