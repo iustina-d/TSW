@@ -1,0 +1,160 @@
+.navbar {
+  background: linear-gradient(90deg, rgb(12, 29, 68) 0%, rgb(44, 90, 197) 100%);
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  max-width: 15000px;
+}
+.navbar-logo {
+  color: #fff;
+  justify-self: start;
+  margin-left: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.fa-Logo {
+  height: 40px;
+  margin-left: 5px;
+  margin-right: 0.5rem;
+  margin-top: -0.1rem;
+}
+
+.nav-menu {
+  display: grid;
+  grid-template-columns: repeat(8, auto);
+  grid-gap: 10px;
+  list-style: none;
+  text-align: center;
+  width: 60vw;
+  justify-content: end;
+  margin-right: 2rem;
+}
+
+.nav-item {
+  height: 20px;
+}
+
+.nav-links {
+  display: flex;
+  color: #fff;
+  font-weight: bold;
+  align-items: center;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  height: 100%;
+}
+.menu-icon {
+  margin-top: 20px;
+  font-size: 2rem;
+}
+
+.nav-links:hover {
+  background-color: rgba(255, 255, 255, 0.803);
+  color: #333;
+  border: none;
+  transition-duration: 0.4s;
+  text-align: center;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 1rem;
+}
+.fa-bars {
+  color: #fff;
+}
+.menu-icon {
+  display: none;
+}
+@media screen and (max-width: 1500px) {
+  .nav-menu {
+    display: table-column;
+    flex-direction: column;
+    position: absolute;
+    top: 75px;
+    opacity: 1;
+    transition: all 0.5s ease;
+    display: none;
+  }
+  .nav-menu.active {
+    display: block;
+    background: linear-gradient(
+      90deg,
+      rgb(12, 29, 68) 0%,
+      rgb(44, 90, 197) 100%
+    );
+    transition: all 0.5s ease;
+    width: 100%;
+    height: calc(100vh - 70px);
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 24px;
+    padding-top: 2rem;
+  }
+  .nav-item {
+    margin-bottom: 60px;
+    font-size: 2.2rem;
+    display: flex;
+    align-items: center;
+  }
+  .nav-links {
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+    display: table;
+  }
+  .nav-links:hover {
+    background-color: #ffffff;
+    opacity: 0.9;
+    color: #333;
+    border-radius: auto;
+    border: none;
+    padding: none;
+    transition-duration: 0.4s;
+    text-align: center;
+    font-size: 35.2px;
+    cursor: pointer;
+  }
+  .navbar-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(25%, 50%);
+  }
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 35%);
+    font-size: 2.3rem;
+    cursor: pointer;
+  }
+  .fa-xmark {
+    color: #fff;
+    font-size: 2.3rem;
+  }
+}
+
+@media screen and (width: 375px) and (height: 667px) {
+  .nav-item {
+    margin-bottom: 2.5rem;
+    font-size: 2.2rem;
+    display: flex;
+    align-items: center;
+  }
+}
